@@ -1,6 +1,8 @@
 # RocketLaunchPredictor
 This repository encompasses the data collection, analysis, dashboard creation, and machine learning models used to predict the reuse of the first stage and determine the cost-efficiency of each rocket launch.
 
+![](cover,jpg)
+
 ## Project Scenario and Overview
 
 In the burgeoning commercial space age, companies are striving to make space travel affordable for everyone. Among the frontrunners is Virgin Galactic, offering suborbital spaceflights. Rocket Lab provides small satellite launch services, while Blue Origin manufactures sub-orbital and orbital reusable rockets. Arguably the most successful of these companies is SpaceX, known for its significant achievements, such as sending spacecraft to the International Space Station, deploying the Starlink satellite internet constellation, and conducting manned space missions.
@@ -13,4 +15,23 @@ In this project, I assumed the role of a data scientist working for a new rocket
 
 ## Collecting Data
 
-In this project, we will predict if the Falcon 9 first stage will land successfully. SpaceX advertises Falcon 9 rocket launches on its website with a cost of 62 million dollars; other providers cost upward of 165 million dollars each, much of the savings is because SpaceX can reuse the first stage. Therefore if we can determine if the first stage will land, we can determine the cost of a launch. This information can be used if an alternate company wants to bid against SpaceX for a rocket launch. At this stage, we will collect the neccessary data and make sure the data is in the correct format from an API by making a GET request to the SpaceX API.
+In this stage, we will predict if the Falcon 9 first stage will land successfully. SpaceX advertises Falcon 9 rocket launches on its website with a cost of 62 million dollars; other providers cost upward of 165 million dollars each, much of the savings is because SpaceX can reuse the first stage. Therefore if we can determine if the first stage will land, we can determine the cost of a launch. This information can be used if an alternate company wants to bid against SpaceX for a rocket launch. At this stage, we will collect the neccessary data and make sure the data is in the correct format from an API by making a GET request to the SpaceX API.
+
+[Collecting Data on Jupyter Notebook](https://github.com/Henryzeze/RocketLaunchPredictor/blob/main/Collecting_the_data.ipynb)
+
+## Data Wrangling
+
+At this point, we will perform some Exploratory Data Analysis (EDA) to find some patterns in the data and determine what would be the label for training supervised models.
+
+In the data set, there are several different cases where the booster did not land successfully. Sometimes a landing was attempted but failed due to an accident; for example, True Ocean means the mission outcome was successfully landed to a specific region of the ocean while False Ocean means the mission outcome was unsuccessfully landed to a specific region of the ocean. True RTLS means the mission outcome was successfully landed to a ground pad False RTLS means the mission outcome was unsuccessfully landed to a ground pad.True ASDS means the mission outcome was successfully landed on a drone ship False ASDS means the mission outcome was unsuccessfully landed on a drone ship.
+
+we will mainly convert those outcomes into Training Labels with 1 means the booster successfully landed 0 means it was unsuccessful.
+
+### Objectives
+Perform exploratory Data Analysis and determine Training Labels
+
+- Exploratory Data Analysis
+- Determine Training Labels
+
+[EDA on Jupyter Notebook](https://github.com/Henryzeze/RocketLaunchPredictor/blob/main/EDA_Exploratory_Data_Analysis.ipynb)
+

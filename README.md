@@ -35,3 +35,13 @@ Perform exploratory Data Analysis and determine Training Labels
 
 [EDA on Jupyter Notebook](https://github.com/Henryzeze/RocketLaunchPredictor/blob/main/EDA_Exploratory_Data_Analysis.ipynb)
 
+### Exploratory Data Analysis and Feature Engineering
+
+Perform more exploratory Data Analysis and Feature Engineering using Pandas and Matplotlib
+
+- Exploratory Data Analysis
+- Preparing Data Feature Engineering
+
+[EDA & Features Engineering on Jupyter Notebook](https://github.com/Henryzeze/RocketLaunchPredictor/blob/main/EDA_and_Features_Engineering.ipynb)
+
+

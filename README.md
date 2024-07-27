@@ -45,14 +45,18 @@ Perform more exploratory Data Analysis and Feature Engineering using Pandas and 
 [EDA & Features Engineering on Jupyter Notebook](https://github.com/Henryzeze/RocketLaunchPredictor/blob/main/EDA_and_Features_Engineering.ipynb)
 
 
-### Launch Sites Locations Analysis with Folium
+## Prediction / Machine Learning
 
-The launch success rate may depend on many factors such as payload mass, orbit type, and so on. It may also depend on the location and proximities of a launch site, i.e., the initial position of rocket trajectories. Finding an optimal location for building a launch site certainly involves many factors and hopefully we could discover some of the factors by analyzing the existing launch site locations.
+### Objectives
 
-We will be performing more interactive visual analytics using Folium.
+Perform exploratory Data Analysis and determine Training Labels
 
-- **TASK 1:** Mark all launch sites on a map
-- **TASK 2:** Mark the success/failed launches for each site on the map
-- **TASK 3:** Calculate the distances between a launch site to its proximities
+- create a column for the class
+- Standardize the data
+- Split into training data and test data
 
-hh
+Find best Hyperparameter for SVM, Classification Trees and Logistic Regression
+
+- Find the method performs best using test data
+
+[Machine Learning on Jupyter Notebook](https://github.com/Henryzeze/RocketLaunchPredictor/blob/main/Prediction_Machine_Learning.ipynb)
